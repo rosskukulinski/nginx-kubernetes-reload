@@ -1,4 +1,4 @@
-FROM nginx:1.10-alpine
+FROM nginx:1.11-alpine
 MAINTAINER Ross Kukulinski <ross@kukulinski.com>
 
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 /usr/local/bin/dumb-init
