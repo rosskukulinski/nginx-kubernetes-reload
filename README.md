@@ -54,7 +54,7 @@ spec:
         app: gateway
     spec:
       containers:
-      - image: rosskukulinski/nginx-kubernetes-reload:v1.0.0
+      - image: rosskukulinski/nginx-kubernetes-reload:v2.0.0
         imagePullPolicy: Always
         name: gateway
         ports:
@@ -91,6 +91,12 @@ spec:
         secret:
           secretName: jenkins-tls
 ```
+
+## Bad-Bots
+
+This Docker image has been pre-loaded with support for [nginx-badbot-blocker](https://github.com/mariusv/nginx-badbot-blocker/tree/master/VERSION_2).
+
+Blacklist.conf has already been loaded, you should apply your whitelist-ips and whitelist-domains accordingly.
 
 ## Contact
 
